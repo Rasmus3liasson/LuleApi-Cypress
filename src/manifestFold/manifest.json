@@ -32,7 +32,12 @@
             "src": "/static/close-icon.svg",
             "type": "image/svg+xml",
             "sizes": "512x512",
-            "purpose": "any"
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/static/logo-cinema.png",
+            "type": "image/svg+xml",
+            "sizes": "764x400"
         }
     ],
     "background_color": "#112d4e",

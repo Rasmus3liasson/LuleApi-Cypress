@@ -28,7 +28,7 @@ html {
 }
 .header .top-header .logotype {
   width: 12em;
-  height: auto;
+  height: 7sem;
 }
 @media screen and (min-width: 1400px) {
   .header .top-header .logotype {
@@ -36,7 +36,7 @@ html {
     top: 20px;
     left: 0;
     width: 17em;
-    height: auto;
+    height: 9em;
   }
 }
 .header .top-header h1 {
@@ -140,14 +140,16 @@ footer .footer-sections .social-media-links {
   color: #dbe2ef;
   filter: invert(94%) sepia(10%) saturate(397%) hue-rotate(16deg) brightness(105%) contrast(92%);
   padding: 3px;
+  width: 2em;
+  height: 2em;
 }
 footer .footer-sections #municipality-logo {
   width: 100px;
-  height: auto;
+  height: 50px;
 }
 footer .footer-sections #cinema-collab {
-  width: 100px;
-  height: auto;
+  width: 235px;
+  height: 126px;
 }
 @media screen and (min-width: 750px) {
   footer .footer-sections h3 {

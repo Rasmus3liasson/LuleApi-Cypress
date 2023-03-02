@@ -28,15 +28,17 @@ footer {
     .social-media-links {
       @include iconColor;
       padding: 3px;
+      width: 2em;
+      height: 2em;
     }
 
     #municipality-logo {
       width: 100px;
-      height: auto;
+      height: 50px;
     }
     #cinema-collab {
-      width: 100px;
-      height: auto;
+      width: 235px;
+      height: 126px;
     }
 
     @media screen and (min-width: $screen-breakpoint) {
