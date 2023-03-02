@@ -30,7 +30,7 @@ const renderScreenings = async () => {
     title.className = "movie-title";
     screeningDetails.appendChild(title);
 
-    const showTime = document.createElement("a");
+    const showTime = document.createElement("p");
     showTime.innerText = ` ${ele.start_time.substring(
       11,
       16
