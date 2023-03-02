@@ -3,6 +3,11 @@ function hamburger() {
   let mainNavShow = document.querySelector(".main-nav");
   if (hamburgerIcon.getAttribute("src") == "/static/hamburger-icon.svg") {
     hamburgerIcon.setAttribute("src", "/static/close-icon.svg");
+    hamburgerIcon.setAttribute("role", "img");
+    hamburgerIcon.setAttribute(
+      "aria-label",
+      "close icon to close navbar on mobile layout"
+    );
     mainNavShow.classList.add("show");
   } else {
     hamburgerIcon.setAttribute("src", "/static/hamburger-icon.svg");

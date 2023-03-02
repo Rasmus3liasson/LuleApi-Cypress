@@ -20,6 +20,7 @@ app.use(expressLayouts);
 app.use("/static", express.static("./static"));
 app.use("/js", express.static("./static/jsfrontend"));
 app.use("/src", express.static("./src"));
+app.use("/src", express.static("./src/manifestFold"));
 app.use(express.json());
 
 app.get("/", async (req, res) => {

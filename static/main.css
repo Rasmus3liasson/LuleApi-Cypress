@@ -834,8 +834,8 @@ main {
 }
 
 .screening .screening-list-image {
-  max-width: 100px;
-  height: auto;
+  aspect-ratio: auto;
+  width: 100px;
   align-self: left;
 }
 
@@ -858,7 +858,9 @@ main {
 .screening-item .movie-title {
   font-size: 2em;
 }
-.screening-item .movie-title, .screening-item .screening-room, .screening-item .screening-time {
+.screening-item .movie-title,
+.screening-item .screening-room,
+.screening-item .screening-time {
   margin-left: 1rem;
   margin-top: 1rem;
 }
