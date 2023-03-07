@@ -1,5 +1,5 @@
 describe("Test to see if our page i running on digital ocean", () => {
-  it("Visits our deployed site on our digital ocean", () => {
+  it("Visits our deployed site on digital ocean", () => {
     cy.visit("https://lionfish-app-b672u.ondigitalocean.app/");
   });
 });
