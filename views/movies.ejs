@@ -1,10 +1,12 @@
 <div>
-  <li id="movieID" data-id="<%= movie.id %>">
-    <h2>Titel: <%= movie.title %></h2>
-    <p>Intro: <%- movie.intro %></p>
-    <img src="<%= movie.image.url%>" alt="movie images" />
-    <h3 class="movie-rating">Filmens Betyg:</h3>
-  </li>
+  <ul>
+    <li id="movieID" data-id="<%= movie.id %>">
+      <h2>Titel: <%= movie.title %></h2>
+      <p>Intro: <%- movie.intro %></p>
+      <img class="picture" src="<%= movie.image.url%>" alt="movie images" />
+      <h3 class="movie-rating">Filmens Betyg:</h3>
+    </li>
+  </ul>
 </div>
 
 <section class="reviewsSection">
@@ -19,16 +21,26 @@
 <section id="reviewContainer"></section>
 <form class="review-form">
   <div class="review-send">
-    <h2>Lämna review:</h2>
+    <h3>Lämna review:</h3>
     <div class="person-info">
       <h4>Förnamn:</h4>
-      <input class="firstName" class="input" type="text" />
+      <input
+        class="firstName"
+        class="input"
+        type="text"
+        aria-label="Enter first name"
+      />
       <h4>Efternamn:</h4>
-      <input class="lastName" class="input" type="text" />
+      <input
+        class="lastName"
+        class="input"
+        type="text"
+        aria-label="Enter last name"
+      />
     </div>
     <div>
       <h4>Betyg:</h4>
-      <select class="rating" aria-placeholder="0-5" name="" id="">
+      <select class="rating" aria-label="Enter a rating from 0-5">
         <option value="0">0</option>
         <option value="1">1</option>
         <option value="2">2</option>
@@ -41,16 +53,18 @@
     <textarea
       class="comment-field"
       placeholder="Lämna kommentar här"
-      name=""
-      id=""
       cols="25"
       rows="5"
     ></textarea>
   </div>
 
   <div class="capital">
-    <h3>Skriv Sveriges huvudstad för att skicka din review:</h3>
-    <input class="capital-city" type="text" />
+    <h4>Skriv Sveriges huvudstad för att skicka din review:</h4>
+    <input
+      class="capital-city"
+      type="text"
+      aria-label="Enter capital of Sweden"
+    />
 
     <button type="submit" class="send-btn">Skicka din review</button>
   </div>
